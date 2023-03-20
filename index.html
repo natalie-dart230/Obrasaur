@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Obrasaur</title>
+    </head>
+    <body>
+    
+        <h1>Obrasaur</h1>
+        <p>This specific creature is orange and has curved lines all over it's body. The Obrasaur loves the sun, hence the giant sun that slowly creeps up and starts to cover the creature. This creature also has a very straight tail with an orange ball at the end.</p>
+    
+        <script src="pj5s">https://editor.p5js.org/natalie-dart230/sketches/qAaLZhC0k</script>
+        <script src=
+        let ellipsePosition = 0;
+  let ellipseSize = 0;
+
+function setup() {
+  createCanvas(400, 400);
+  x = 1;
+  changeDirection = false;
+}
+
+function draw() {
+  background(3, 190, 252);
+  
+  
+  strokeWeight(3);
+  fill(252, 115, 3);
+  ellipse(107, 255 , 55, 50);
+  ellipse(95, 250, 3, 5);
+  ellipse(105, 250, 3, 5);
+  ellipse(135, 335, 20, 30);
+  ellipse(260, 335, 20, 30);
+  rect(125, 270, 150, 50, 10);
+  ellipse(200,275,150,10);
+  ellipse(200,285,150,10);
+  ellipse(200,295,150,10);
+  ellipse(200,305,150,10);
+  ellipse(200,315,147,10);
+  ellipse(105,265,23,10);
+  line(270, 270, 305, 230);
+  line(273, 270, 305, 230);
+  line(273, 273, 305, 230);
+  line(270, 269, 305, 230);
+  line(275, 274, 305, 230);
+  ellipse(305,230,10,10)
+ 
+  fill(247, 255, 10);
+  ellipse(70, ellipsePosition+380, ellipseSize+20);
+  
+  stroke(20,100,59);
+  fill(48, 189, 26);
+  rect(0, 350, 400, 100);
+  
+ 
+  
+  ellipsePosition = ellipsePosition + random(-1,1);
+  ellipseSize = ellipseSize + 0.2;
+  
+ 
+// Where is the circle
+let x, y;
+
+function setup() {
+  createCanvas(720, 400);
+  // Starts in the middle
+  x = width / 2;
+  y = height;
+}
+
+function draw() {
+  background(200);
+  
+  // Draw a circle
+  stroke(50);
+  fill(100);
+  ellipse(x, y, 24, 24);
+  
+  // Jiggling randomly on the horizontal axis
+  x = x + random(-1, 1);
+  // Moving up at a constant speed
+  y = y - 1;
+  
+  // Reset to the bottom
+  if (y < 0) {
+    y = height;
+  }
+}
+ 
+  
+  
+}
+        
+    </body>
+</html>
